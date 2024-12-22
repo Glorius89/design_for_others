@@ -1,0 +1,886 @@
+<!doctype html>
+<html lang="en">
+<head>
+   <!-- Required meta tags -->
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   <title>Gloria Solinas - Design for Others (Sprint 3)</title>
+   <!-- Favicon -->
+   <link rel="shortcut icon" href="../assets/images/favicon.ico" />
+   <!-- Bootstrap CSS -->
+   <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+   <!--datatable CSS -->
+   <link rel="stylesheet" href="../assets/css/dataTables.bootstrap4.min.css">
+   <!-- Typography CSS -->
+   <link rel="stylesheet" href="../assets/css/typography.css">
+   <!-- Style CSS -->
+   <link rel="stylesheet" href="../assets/css/style.css">
+   <!-- Responsive CSS -->
+   <link rel="stylesheet" href="../assets/css/responsive.css">
+
+   <!-- New Family Fonts -->
+   <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=NunitoSans&display=swap" rel="stylesheet">
+   <!-- Font Awesome -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+
+</head>
+
+<body>
+   <!-- loader Start -->
+   <div id="loading">
+      <div id="loading-center">
+      </div>
+   </div>
+   <!-- loader END -->
+   <!-- Wrapper Start -->
+   <div class="wrapper">
+      <!-- Sidebar-->
+      <div class="iq-sidebar">
+         <div class="iq-sidebar-logo d-flex justify-content-between">
+            <a href="index.html" class="header-logo">
+               <img src="../assets/images/logo.png" class="img-fluid rounded-normal" alt="">
+               <div class="logo-title">
+                  <span class="text-primary text-uppercase">Streamit</span>
+               </div>
+            </a>
+            <div class="iq-menu-bt-sidebar">
+               <div class="iq-menu-bt align-self-center">
+                  <div class="wrapper-menu">
+                     <div class="main-circle"><i class="las la-bars"></i></div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div id="sidebar-scrollbar">
+            <nav class="iq-sidebar-menu">
+               <ul id="iq-sidebar-toggle" class="iq-menu">
+                  <li><a href="index.html" class="text-primary"><i class="ri-arrow-right-line"></i><span>Visit site</span></a></li>
+                  <li class="active active-menu"><a href="index.html" class="iq-waves-effect"><i class="las la-home iq-arrow-left"></i><span>Dashboard</span></a></li>
+                  <li><a href="user.html" class="iq-waves-effect"><i class="las la-user-friends"></i><span>User</span></a></li>
+                  <li>
+                     <a href="#pages" class="iq-waves-effect collapsed" data-toggle="collapse" aria-expanded="false"><i class="las la-file-alt iq-arrow-left"></i><span>Pages</span><i class="ri-arrow-right-s-line iq-arrow-right"></i></a>
+                     <ul id="pages" class="iq-submenu collapse" data-parent="#iq-sidebar-toggle">
+                        <li>
+                           <a href="#authentication" class="iq-waves-effect collapsed" data-toggle="collapse" aria-expanded="false"><i class="ri-pages-line"></i><span>Authentication</span><i class="ri-arrow-right-s-line iq-arrow-right"></i></a>
+                           <ul id="authentication" class="iq-submenu collapse" data-parent="#pages">
+                              <li><a href="sign-in.html"><i class="las la-sign-in-alt"></i>Login</a></li>
+                              <li><a href="sign-up.html"><i class="ri-login-circle-line"></i>Register</a></li>
+                              <li><a href="pages-recoverpw.html"><i class="ri-record-mail-line"></i>Recover Password</a></li>
+                              <li><a href="pages-confirm-mail.html"><i class="ri-file-code-line"></i>Confirm Mail</a></li>
+                              <li><a href="pages-lock-screen.html"><i class="ri-lock-line"></i>Lock Screen</a></li>
+                           </ul>
+                        </li>
+                        <li>
+                           <a href="#extra-pages" class="iq-waves-effect collapsed" data-toggle="collapse" aria-expanded="false"><i class="ri-pantone-line"></i><span>Extra Pages</span><i class="ri-arrow-right-s-line iq-arrow-right"></i></a>
+                           <ul id="extra-pages" class="iq-submenu collapse" data-parent="#pages">
+                              <li><a href="pages-timeline.html"><i class="ri-map-pin-time-line"></i>Timeline</a></li>
+                              <li><a href="pages-invoice.html"><i class="ri-question-answer-line"></i>Invoice</a></li>
+                              <li><a href="blank-page.html"><i class="ri-invision-line"></i>Blank Page</a></li>
+                              <li><a href="pages-error.html"><i class="ri-error-warning-line"></i>Error 404</a></li>
+                              <li><a href="pages-error-500.html"><i class="ri-error-warning-line"></i>Error 500</a></li>
+                           
+                              <li><a href="pages-maintenance.html"><i class="ri-archive-line"></i>Maintenance</a></li>
+                              <li><a href="pages-comingsoon.html"><i class="ri-mastercard-line"></i>Coming Soon</a></li>
+                              <li><a href="pages-faq.html"><i class="ri-compasses-line"></i>Faq</a></li>
+                           </ul>
+                        </li>
+                     </ul>
+                  </li>
+               </ul>
+            </nav>
+         </div>
+      </div>
+
+      <!-- TOP Nav Bar -->
+      <div class="iq-top-navbar">
+         <div class="iq-navbar-custom">
+            <nav class="navbar navbar-expand-lg navbar-light p-0">
+               <div class="iq-menu-bt d-flex align-items-center">
+                  <div class="wrapper-menu">
+                     <div class="main-circle"><i class="las la-bars"></i></div>
+                  </div>
+                  <div class="iq-navbar-logo d-flex justify-content-between">
+                     <a href="index.html" class="header-logo">
+                        <img src="../assets/images/logo.png" class="img-fluid rounded-normal" alt="">
+                        <div class="logo-title">
+                           <span class="text-primary text-uppercase">S⊛lix</span>
+                        </div>
+                     </a>
+                  </div>
+               </div>
+               <div class="iq-search-bar ml-auto">
+                  <form action="#" class="searchbox">
+                     <input type="text" class="text search-input" placeholder="Search">
+                     <a class="search-link" href="#"><i class="ri-search-line"></i></a>
+                  </form>
+               </div>
+               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"  aria-label="Toggle navigation">
+                  <i class="ri-menu-3-line"></i>
+               </button>
+               <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav ml-auto navbar-list">
+                     <li class="nav-item nav-icon search-content">
+                        <a href="#" class="search-toggle iq-waves-effect text-gray rounded">
+                           <i class="ri-search-line"></i>
+                        </a>
+                        <form action="#" class="search-box p-0">
+                           <input type="text" class="text search-input" placeholder="Type here to search...">
+                           <a class="search-link" href="#"><i class="ri-search-line"></i></a>
+                        </form>
+                     </li>
+                     <li class="nav-item nav-icon">
+                        <a href="#" class="search-toggle iq-waves-effect text-gray rounded">
+                           <i class="ri-notification-2-line"></i>
+                           <span class="bg-primary dots"></span>
+                        </a>
+                        <div class="iq-sub-dropdown">
+                           <div class="iq-card shadow-none m-0">
+                              <div class="iq-card-body p-0">
+                                 <div class="bg-primary p-3">
+                                    <h5 class="mb-0 text-white">All Notifications<small class="badge  badge-light float-right pt-1">4</small></h5>
+                                 </div>
+                                 <a href="#" class="iq-sub-card" >
+                                    <div class="media align-items-center">
+                                       <div class="">
+                                          <img class="avatar-40 rounded" src="../assets/images/user/01.jpg" alt="">
+                                       </div>
+                                       <div class="media-body ml-3">
+                                          <h6 class="mb-0 ">Emma Watson Barry</h6>
+                                          <small class="float-right font-size-12">Just Now</small>
+                                          <p class="mb-0">95 MB</p>
+                                       </div>
+                                    </div>
+                                 </a>
+                                 <a href="#" class="iq-sub-card" >
+                                    <div class="media align-items-center">
+                                       <div class="">
+                                          <img class="avatar-40 rounded" src="../assets/images/user/02.jpg" alt="">
+                                       </div>
+                                       <div class="media-body ml-3">
+                                          <h6 class="mb-0 ">New customer is join</h6>
+                                          <small class="float-right font-size-12">5 days ago</small>
+                                          <p class="mb-0">Cyst Barry</p>
+                                       </div>
+                                    </div>
+                                 </a>
+                              </div>
+                           </div>
+                        </div>
+                     </li>
+                     <li class="nav-item nav-icon dropdown">
+                        <a href="#" class="search-toggle iq-waves-effect text-gray rounded">
+                           <i class="ri-mail-line"></i>
+                           <span class="bg-primary dots"></span>
+                        </a>
+                        <div class="iq-sub-dropdown">
+                           <div class="iq-card shadow-none m-0">
+                              <div class="iq-card-body p-0 ">
+                                 <div class="bg-primary p-3">
+                                    <h5 class="mb-0 text-white">All Messages<small class="badge  badge-light float-right pt-1">5</small></h5>
+                                 </div>
+                                 <a href="#" class="iq-sub-card">
+                                    <div class="media align-items-center">
+                                       <div class="">
+                                          <img class="avatar-40 rounded" src="../assets/images/user/01.jpg" alt="">
+                                       </div>
+                                       <div class="media-body ml-3">
+                                          <h6 class="mb-0 ">Barry Emma Watson</h6>
+                                          <small class="float-left font-size-12">13 Jun</small>
+                                       </div>
+                                    </div>
+                                 </a>
+                                 <a href="#" class="iq-sub-card">
+                                    <div class="media align-items-center">
+                                       <div class="">
+                                          <img class="avatar-40 rounded" src="../assets/images/user/02.jpg" alt="">
+                                       </div>
+                                       <div class="media-body ml-3">
+                                          <h6 class="mb-0 ">Lorem Ipsum Watson</h6>
+                                          <small class="float-left font-size-12">20 Apr</small>
+                                       </div>
+                                    </div>
+                                 </a>
+                                 <a href="#" class="iq-sub-card">
+                                    <div class="media align-items-center">
+                                       <div class="">
+                                          <img class="avatar-40 rounded" src="../assets/images/user/03.jpg" alt="">
+                                       </div>
+                                       <div class="media-body ml-3">
+                                          <h6 class="mb-0 ">Why do we use it?</h6>
+                                          <small class="float-left font-size-12">30 Jun</small>
+                                       </div>
+                                    </div>
+                                 </a>
+                                 <a href="#" class="iq-sub-card">
+                                    <div class="media align-items-center">
+                                       <div class="">
+                                          <img class="avatar-40 rounded" src="../assets/images/user/04.jpg" alt="">
+                                       </div>
+                                       <div class="media-body ml-3">
+                                          <h6 class="mb-0 ">Variations Passages</h6>
+                                          <small class="float-left font-size-12">12 Sep</small>
+                                       </div>
+                                    </div>
+                                 </a>
+                                 <a href="#" class="iq-sub-card">
+                                    <div class="media align-items-center">
+                                       <div class="">
+                                          <img class="avatar-40 rounded" src="../assets/images/user/05.jpg" alt="">
+                                       </div>
+                                       <div class="media-body ml-3">
+                                          <h6 class="mb-0 ">Lorem Ipsum generators</h6>
+                                          <small class="float-left font-size-12">5 Dec</small>
+                                       </div>
+                                    </div>
+                                 </a>
+                              </div>
+                           </div>
+                        </div>
+                     </li>
+                     <li class="line-height pt-3">
+                        <a href="#" class="search-toggle iq-waves-effect d-flex align-items-center">
+                           <img src="../assets/images/profile_picture.jpg" class="img-fluid rounded-circle mr-3" alt="user">
+                        </a>
+                        <div class="iq-sub-dropdown iq-user-dropdown">
+                           <div class="iq-card shadow-none m-0">
+                              <div class="iq-card-body p-0 ">
+                                 <div class="bg-primary p-3">
+                                    <h5 class="mb-0 text-white line-height">Hello Gloria Solinas</h5>
+                                    <span class="text-white font-size-12">Available</span>
+                                 </div>
+                                 <a href="profile.html" class="iq-sub-card iq-bg-primary-hover">
+                                    <div class="media align-items-center">
+                                       <div class="rounded iq-card-icon iq-bg-primary">
+                                          <i class="ri-file-user-line"></i>
+                                       </div>
+                                       <div class="media-body ml-3">
+                                          <h6 class="mb-0 ">My Profile</h6>
+                                          <p class="mb-0 font-size-12">View personal profile details.</p>
+                                       </div>
+                                    </div>
+                                 </a>
+                                 <a href="profile-edit.html" class="iq-sub-card iq-bg-primary-hover">
+                                    <div class="media align-items-center">
+                                       <div class="rounded iq-card-icon iq-bg-primary">
+                                          <i class="ri-profile-line"></i>
+                                       </div>
+                                       <div class="media-body ml-3">
+                                          <h6 class="mb-0 ">Edit Profile</h6>
+                                          <p class="mb-0 font-size-12">Modify your personal details.</p>
+                                       </div>
+                                    </div>
+                                 </a>
+                                 <a href="account-setting.html" class="iq-sub-card iq-bg-primary-hover">
+                                    <div class="media align-items-center">
+                                       <div class="rounded iq-card-icon iq-bg-primary">
+                                          <i class="ri-account-box-line"></i>
+                                       </div>
+                                       <div class="media-body ml-3">
+                                          <h6 class="mb-0 ">Account settings</h6>
+                                          <p class="mb-0 font-size-12">Manage your account parameters.</p>
+                                       </div>
+                                    </div>
+                                 </a>
+                                 <a href="privacy-setting.html" class="iq-sub-card iq-bg-primary-hover">
+                                    <div class="media align-items-center">
+                                       <div class="rounded iq-card-icon iq-bg-primary">
+                                          <i class="ri-lock-line"></i>
+                                       </div>
+                                       <div class="media-body ml-3">
+                                          <h6 class="mb-0 ">Privacy Settings</h6>
+                                          <p class="mb-0 font-size-12">Control your privacy parameters.</p>
+                                       </div>
+                                    </div>
+                                 </a>
+                                 <div class="d-inline-block w-100 text-center p-3">
+                                    <a class="bg-primary iq-sign-btn" href="sign-in.html" role="button">Sign out<i class="ri-login-box-line ml-2"></i></a>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </li>
+                  </ul>
+               </div>
+            </nav>
+         </div>
+      </div>
+      <!-- TOP Nav Bar END -->
+
+      <!-- Hero Image Section -->
+<section class="hero-image">
+   <div class="hero-content">
+      <h1>Welcome to Solix</h1>
+      <p>Enhance your learning experience!</p>
+   </div>
+</section>
+
+
+      <!-- PAGE CONTENT - SECTION 1 -->
+      <div id="content-page" class="content-page">
+         <div class="container-fluid">
+            <div class="row">
+               <div class="col-lg-12">
+                  <div class="iq-card">
+                     <div class="iq-card-header d-flex justify-content-between align-items-center">
+                        <div class="iq-header-title">
+                           <h3 class="card-title">FIGMA</h3>
+                        </div>
+                        <div id="top-rated-item-slick-arrow" class="slick-aerrow-block "></div>
+                     </div>
+                     <div class="iq-card-body">
+                        <ul class="list-unstyled row top-rated-item mb-0">
+                           <li class="col-sm-6 col-lg-4 col-xl-3 iq-rated-box">
+                              <div class="iq-card mb-0">
+                                 <div class="iq-card-body p-0">
+                                    <div class="iq-thumb">
+                                       <a href="javascript:void(0)">
+                                          <iframe 
+                                             width="100%" 
+                                             height="auto" 
+                                             src="https://www.youtube.com/embed/1ONxxlJnvdM" 
+                                             title="Figma tutorial: Intro to variables" 
+                                             frameborder="0" 
+                                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                             referrerpolicy="strict-origin-when-cross-origin" 
+                                             allowfullscreen>
+                                          </iframe>
+                                       </a>
+                                    </div>
+                                    <div class="iq-feature-list">
+                                       <h6 class="font-weight-600 mb-0">Variables</h6>
+                                       <p class="mb-4 mt-2">Variables are reusable values that help save time when designing.</p>
+                                       <div class="d-flex align-items-center justify-content-between my-2 iq-ltr-direction">
+                                          <!-- Watch Now Button -->
+                                          <a href="https://www.youtube.com/embed/6lmvCqvmjfE" target="_blank" class="btn btn-primary btn-sm ml-auto">Watch now <i class="fa-regular fa-arrow-right" aria-hidden="true"></i></a>
+                                          <!-- Watch Now Button -->
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </li>                           
+                           <li class="col-sm-6 col-lg-4 col-xl-3 iq-rated-box">
+                              <div class="iq-card mb-0">
+                                 <div class="iq-card-body p-0">
+                                    <div class="iq-thumb">
+                                       <a href="javascript:void(0)">
+                                          <iframe 
+                                             width="100%" 
+                                             height="auto" 
+                                             src="https://www.youtube.com/embed/y29Xwt9dET0" 
+                                             title="Figma Tutorial: Variants" 
+                                             frameborder="0" 
+                                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                             referrerpolicy="strict-origin-when-cross-origin" 
+                                             allowfullscreen>
+                                          </iframe>
+                                       </a>
+                                    </div>
+                                    <div class="iq-feature-list">
+                                       <h6 class="font-weight-600 mb-0">Variants</h6>
+                                       <p class="mb-0 mt-2">Variants group similar components into a container.</p>
+                                       <div class="d-flex align-items-center my-2 iq-ltr-direction">
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </li>
+                           <li class="col-sm-6 col-lg-4 col-xl-3 iq-rated-box">
+                              <div class="iq-card mb-0">
+                                 <div class="iq-card-body p-0">
+                                    <div class="iq-thumb">
+                                       <a href="javascript:void(0)">
+                                          <iframe 
+                                             width="100%" 
+                                             height="auto" 
+                                             src="https://www.youtube.com/embed/iIq8FLt1hUY" 
+                                             title="Figma tutorial: Component properties" 
+                                             frameborder="0" 
+                                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                             referrerpolicy="strict-origin-when-cross-origin" 
+                                             allowfullscreen>
+                                          </iframe>
+                                       </a>
+                                    </div>
+                                    <div class="iq-feature-list">
+                                       <h6 class="font-weight-600 mb-0">Component Properties</h6>
+                                       <p class="mb-0 mt-2">Component properties are the changeable aspects.</p>
+                                       <div class="d-flex align-items-center my-2 iq-ltr-direction">
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </li>
+                           <li class="col-sm-6 col-lg-4 col-xl-3 iq-rated-box">
+                              <div class="iq-card mb-0">
+                                 <div class="iq-card-body p-0">
+                                    <div class="iq-thumb">
+                                       <a href="javascript:void(0)">
+                                          <iframe 
+                                             width="100%" 
+                                             height="auto" 
+                                             src="https://www.youtube.com/embed/KfEk6Hh4mW8" 
+                                             title="How to create Figma variables with multiple modes | Figma Bites" 
+                                             frameborder="0" 
+                                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                             referrerpolicy="strict-origin-when-cross-origin" 
+                                             allowfullscreen>
+                                       </iframe>
+                                       </a>
+                                    </div>
+                                    <div class="iq-feature-list">
+                                       <h6 class="font-weight-600 mb-0">Multiple Mode</h6>
+                                       <p class="mb-0 mt-2">Use modes to simplify light and dark mode designs.</p>
+                                       <div class="d-flex align-items-center my-2 iq-ltr-direction">
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+            <!-- PAGE CONTENT - SECTION 2 -->
+            <div class="row">
+               <div class="col-lg-12">
+                  <div class="iq-card">
+                     <div class="iq-card-header d-flex justify-content-between align-items-center">
+                        <div class="iq-header-title">
+                           <h4 class="card-title">UX PRINCIPLES</h4>
+                        </div>
+                        <div id="top-rated-item-slick-arrow" class="slick-aerrow-block "></div>
+                     </div>
+                     <div class="iq-card-body">
+                        <ul class="list-unstyled row top-rated-item mb-0">
+                           <li class="col-sm-6 col-lg-4 col-xl-3 iq-rated-box">
+                              <div class="iq-card mb-0">
+                                 <div class="iq-card-body p-0">
+                                    <div class="iq-thumb">
+                                       <a href="javascript:void(0)">
+                                          <iframe 
+                                             width="100%" 
+                                             height="auto" 
+                                             src="https://www.youtube.com/embed/OtBeg5eyEHU" 
+                                             title="The Immutable Rules of UX (Jakob Nielsen Keynote)" 
+                                             frameborder="0" 
+                                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                             referrerpolicy="strict-origin-when-cross-origin" 
+                                             allowfullscreen>
+                                          </iframe>
+                                       </a>
+                                    </div>
+                                    <div class="iq-feature-list">
+                                       <h6 class="font-weight-600 mb-0">The Laws of UX</h6>
+                                       <p class="mb-0 mt-2">Course</p>
+                                       <div class="d-flex align-items-center my-2 iq-ltr-direction">
+                                          <p class="mb-0 mr-2"><i class="lar la-eye mr-1"></i> 134</p>
+                                          <p class="mb-0 "><i class="las la-download ml-2"></i> 30 k</p>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </li>
+                           <li class="col-sm-6 col-lg-4 col-xl-3 iq-rated-box">
+                              <div class="iq-card mb-0">
+                                 <div class="iq-card-body p-0">
+                                    <div class="iq-thumb">
+                                       <a href="javascript:void(0)">
+                                          <iframe 
+                                             width="100%" 
+                                             height="auto" 
+                                             src="https://www.youtube.com/embed/6lmvCqvmjfE" 
+                                             title="Design Thinking 101" 
+                                             frameborder="0" 
+                                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                             referrerpolicy="strict-origin-when-cross-origin" 
+                                             allowfullscreen>
+                                          </iframe>
+                                       </a>
+                                    </div>
+                                    <div class="iq-feature-list">
+                                       <h6 class="font-weight-600 mb-0">Figma</h6>
+                                       <p class="mb-0 mt-2">Course</p>
+                                       <div class="d-flex align-items-center my-2 iq-ltr-direction">
+                                          <p class="mb-0 mr-2"><i class="lar la-eye mr-1"></i> 133</p>
+                                          <p class="mb-0 "><i class="las la-download ml-2"></i> 20 k</p>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </li>
+                           <li class="col-sm-6 col-lg-4 col-xl-3 iq-rated-box">
+                              <div class="iq-card mb-0">
+                                 <div class="iq-card-body p-0">
+                                    <div class="iq-thumb">
+                                       <a href="javascript:void(0)">
+                                          <iframe 
+                                             width="100%" 
+                                             height="auto" 
+                                             src="https://www.youtube.com/embed/XhPQbUsD9c0" 
+                                             title="The UX Design Process For Beginners! (The 5 Key Stages)" 
+                                             frameborder="0" 
+                                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                             referrerpolicy="strict-origin-when-cross-origin" 
+                                             allowfullscreen>
+                                          </iframe>
+                                       </a>
+                                    </div>
+                                    <div class="iq-feature-list">
+                                       <h6 class="font-weight-600 mb-0">Web Conventions</h6>
+                                       <p class="mb-0 mt-2">Course</p>
+                                       <div class="d-flex align-items-center my-2 iq-ltr-direction">
+                                          <p class="mb-0 mr-2"><i class="lar la-eye mr-1"></i> 222</p>
+                                          <p class="mb-0 "><i class="las la-download ml-2"></i> 40 k</p>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </li>
+                           <li class="col-sm-6 col-lg-4 col-xl-3 iq-rated-box">
+                              <div class="iq-card mb-0">
+                                 <div class="iq-card-body p-0">
+                                    <div class="iq-thumb">
+                                       <a href="javascript:void(0)">
+                                          <iframe 
+                                             width="100%" 
+                                             height="auto" 
+                                             src="https://www.youtube.com/embed/ziQEqGZB8GE?list=PL4GEkVtNYGlJQh5sKNmxVsbddnUZ1qw8n" 
+                                             title="What Is UX Design? - An Introduction (Full Guide For 2024)" 
+                                             frameborder="0" 
+                                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                             referrerpolicy="strict-origin-when-cross-origin" 
+                                             allowfullscreen>
+                                          </iframe>
+                                       </a>
+                                    </div>
+                                    <div class="iq-feature-list">
+                                       <h6 class="font-weight-600 mb-0">Accessibility</h6>
+                                       <p class="mb-0 mt-2">Course</p>
+                                       <div class="d-flex align-items-center my-2 iq-ltr-direction">
+                                          <p class="mb-0 mr-2"><i class="lar la-eye mr-1"></i> 122</p>
+                                          <p class="mb-0 "><i class="las la-download ml-2"></i> 25 k</p>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+            <!-- PAGE CONTENT - SECTION 3 -->
+            <div class="row">
+               <div class="col-lg-12">
+                  <div class="iq-card">
+                     <div class="iq-card-header d-flex justify-content-between align-items-center">
+                        <div class="iq-header-title">
+                           <h4 class="card-title">Trending Now</h4>
+                        </div>
+                        <div id="top-rated-item-slick-arrow" class="slick-aerrow-block "></div>
+                     </div>
+                     <div class="iq-card-body">
+                        <ul class="list-unstyled row top-rated-item mb-0">
+                           <li class="col-sm-6 col-lg-4 col-xl-3 iq-rated-box">
+                              <div class="iq-card mb-0">
+                                 <div class="iq-card-body p-0">
+                                    <div class="iq-thumb">
+                                       <a href="javascript:void(0)">
+                                          <iframe 
+                                             width="100%" 
+                                             height="auto" 
+                                             src="https://www.youtube.com/embed/OtBeg5eyEHU" 
+                                             title="The Immutable Rules of UX (Jakob Nielsen Keynote)" 
+                                             frameborder="0" 
+                                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                             referrerpolicy="strict-origin-when-cross-origin" 
+                                             allowfullscreen>
+                                          </iframe>
+                                       </a>
+                                    </div>
+                                    <div class="iq-feature-list">
+                                       <h6 class="font-weight-600 mb-0">The Laws of UX</h6>
+                                       <p class="mb-0 mt-2">Course</p>
+                                       <div class="d-flex align-items-center my-2 iq-ltr-direction">
+                                          <p class="mb-0 mr-2"><i class="lar la-eye mr-1"></i> 134</p>
+                                          <p class="mb-0 "><i class="las la-download ml-2"></i> 30 k</p>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </li>
+                           <li class="col-sm-6 col-lg-4 col-xl-3 iq-rated-box">
+                              <div class="iq-card mb-0">
+                                 <div class="iq-card-body p-0">
+                                    <div class="iq-thumb">
+                                       <a href="javascript:void(0)">
+                                          <iframe 
+                                             width="100%" 
+                                             height="auto" 
+                                             src="https://www.youtube.com/embed/6lmvCqvmjfE" 
+                                             title="Design Thinking 101" 
+                                             frameborder="0" 
+                                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                             referrerpolicy="strict-origin-when-cross-origin" 
+                                             allowfullscreen>
+                                          </iframe>
+                                       </a>
+                                    </div>
+                                    <div class="iq-feature-list">
+                                       <h6 class="font-weight-600 mb-0">Figma</h6>
+                                       <p class="mb-0 mt-2">Course</p>
+                                       <div class="d-flex align-items-center my-2 iq-ltr-direction">
+                                          <p class="mb-0 mr-2"><i class="lar la-eye mr-1"></i> 133</p>
+                                          <p class="mb-0 "><i class="las la-download ml-2"></i> 20 k</p>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </li>
+                           <li class="col-sm-6 col-lg-4 col-xl-3 iq-rated-box">
+                              <div class="iq-card mb-0">
+                                 <div class="iq-card-body p-0">
+                                    <div class="iq-thumb">
+                                       <a href="javascript:void(0)">
+                                          <iframe 
+                                             width="100%" 
+                                             height="auto" 
+                                             src="https://www.youtube.com/embed/XhPQbUsD9c0" 
+                                             title="The UX Design Process For Beginners! (The 5 Key Stages)" 
+                                             frameborder="0" 
+                                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                             referrerpolicy="strict-origin-when-cross-origin" 
+                                             allowfullscreen>
+                                          </iframe>
+                                       </a>
+                                    </div>
+                                    <div class="iq-feature-list">
+                                       <h6 class="font-weight-600 mb-0">Web Conventions</h6>
+                                       <p class="mb-0 mt-2">Course</p>
+                                       <div class="d-flex align-items-center my-2 iq-ltr-direction">
+                                          <p class="mb-0 mr-2"><i class="lar la-eye mr-1"></i> 222</p>
+                                          <p class="mb-0 "><i class="las la-download ml-2"></i> 40 k</p>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </li>
+                           <li class="col-sm-6 col-lg-4 col-xl-3 iq-rated-box">
+                              <div class="iq-card mb-0">
+                                 <div class="iq-card-body p-0">
+                                    <div class="iq-thumb">
+                                       <a href="javascript:void(0)">
+                                          <iframe 
+                                             width="100%" 
+                                             height="auto" 
+                                             src="https://www.youtube.com/embed/ziQEqGZB8GE?list=PL4GEkVtNYGlJQh5sKNmxVsbddnUZ1qw8n" 
+                                             title="What Is UX Design? - An Introduction (Full Guide For 2024)" 
+                                             frameborder="0" 
+                                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                             referrerpolicy="strict-origin-when-cross-origin" 
+                                             allowfullscreen>
+                                          </iframe>
+                                       </a>
+                                    </div>
+                                    <div class="iq-feature-list">
+                                       <h6 class="font-weight-600 mb-0">Accessibility</h6>
+                                       <p class="mb-0 mt-2">Course</p>
+                                       <div class="d-flex align-items-center my-2 iq-ltr-direction">
+                                          <p class="mb-0 mr-2"><i class="lar la-eye mr-1"></i> 122</p>
+                                          <p class="mb-0 "><i class="las la-download ml-2"></i> 25 k</p>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+            <!-- PAGE CONTENT - SECTION 4 -->
+            <div class="row">
+               <div class="col-lg-12">
+                  <div class="iq-card">
+                     <div class="iq-card-header d-flex justify-content-between align-items-center">
+                        <div class="iq-header-title">
+                           <h4 class="card-title">WEB DEVELOPMENT</h4>
+                        </div>
+                        <div id="top-rated-item-slick-arrow" class="slick-aerrow-block "></div>
+                     </div>
+                     <div class="iq-card-body">
+                        <ul class="list-unstyled row top-rated-item mb-0">
+                           <li class="col-sm-6 col-lg-4 col-xl-3 iq-rated-box">
+                              <div class="iq-card mb-0">
+                                 <div class="iq-card-body p-0">
+                                    <div class="iq-thumb">
+                                       <a href="javascript:void(0)">
+                                          <iframe 
+                                             width="100%" 
+                                             height="auto" 
+                                             src="https://www.youtube.com/embed/O_9u1P5YjVc?list=PL4cUxeGkcC9joIM91nLzd_qaH_AimmdAR" 
+                                             title="Bootstrap 5 Crash Course Tutorial #1 - Intro & Setup" 
+                                             frameborder="0" 
+                                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                             referrerpolicy="strict-origin-when-cross-origin" 
+                                             allowfullscreen>
+                                          </iframe>
+                                       </a>
+                                    </div>
+                                    <div class="iq-feature-list">
+                                       <h6 class="font-weight-600 mb-0">Introduction to Bootstrap 5</h6>
+                                       <p class="mb-0 mt-2">Learn how to create a responsive landing page.</p>
+                                       <div class="d-flex align-items-center my-2 iq-ltr-direction">
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </li>
+                           <li class="col-sm-6 col-lg-4 col-xl-3 iq-rated-box">
+                              <div class="iq-card mb-0">
+                                 <div class="iq-card-body p-0">
+                                    <div class="iq-thumb">
+                                       <a href="javascript:void(0)">
+                                          <iframe 
+                                             width="100%" 
+                                             height="auto" 
+                                             src="https://www.youtube.com/embed/gRpRSYhXDGc" 
+                                             title="Learn CSS Nesting in 4 Minutes (Pros & Cons)" 
+                                             frameborder="0" 
+                                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                             referrerpolicy="strict-origin-when-cross-origin" 
+                                             allowfullscreen>
+                                          </iframe>
+                                       </a>
+                                    </div>
+                                    <div class="iq-feature-list">
+                                       <h6 class="font-weight-600 mb-0">CCS Nesting</h6>
+                                       <p class="mb-0 mt-2">Learn how to nest selectors in all major browsers.</p>
+                                       <div class="d-flex align-items-center my-2 iq-ltr-direction">
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </li>
+                           <li class="col-sm-6 col-lg-4 col-xl-3 iq-rated-box">
+                              <div class="iq-card mb-0">
+                                 <div class="iq-card-body p-0">
+                                    <div class="iq-thumb">
+                                       <a href="javascript:void(0)">
+                                          <iframe 
+                                             width="100%" 
+                                             height="auto" 
+                                             src="https://www.youtube.com/embed/iG2jotQo9NI" 
+                                             title="HTML & CSS for Beginners | FREE MEGA COURSE (7+ Hours!)" 
+                                             frameborder="0" 
+                                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                             referrerpolicy="strict-origin-when-cross-origin" 
+                                             allowfullscreen>
+                                          </iframe>
+                                       </a>
+                                    </div>
+                                    <div class="iq-feature-list">
+                                       <h6 class="font-weight-600 mb-0">HTML & CSS</h6>
+                                       <p class="mb-0 mt-2">Learn how to code the core building blocks of any website.</p>
+                                       <div class="d-flex align-items-center my-2 iq-ltr-direction">
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </li>
+                           <li class="col-sm-6 col-lg-4 col-xl-3 iq-rated-box">
+                              <div class="iq-card mb-0">
+                                 <div class="iq-card-body p-0">
+                                    <div class="iq-thumb">
+                                       <a href="javascript:void(0)">
+                                          <iframe 
+                                             width="100%" 
+                                             height="auto" 
+                                             src="https://www.youtube.com/embed/sd0ypO9MTWY" 
+                                             title="What is SEO? | Search Engine Optimization Explained" 
+                                             frameborder="0" 
+                                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                             referrerpolicy="strict-origin-when-cross-origin" 
+                                             allowfullscreen>
+                                          </iframe>
+                                       </a>
+                                    </div>
+                                    <div class="iq-feature-list">
+                                       <h6 class="font-weight-600 mb-0">SEO</h6>
+                                       <p class="mb-0 mt-2">Learn how to improve your SEO and help users find your site.</p>
+                                       <div class="d-flex align-items-center my-2 iq-ltr-direction">
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <!-- Wrapper END -->
+    
+
+
+   <!-- Footer -->
+   <footer class="iq-footer">
+      <div class="container-fluid">
+         <div class="row">
+            <div class="col-lg-6">
+               <ul class="list-inline mb-0">
+                  <li class="list-inline-item"><a href="privacy-policy.html">Privacy Policy</a></li>
+                  <li class="list-inline-item"><a href="terms-of-service.html">Terms of Use</a></li>
+               </ul>
+            </div>
+            <div class="col-lg-6 text-right">
+               Copyright 2024 <a href="#">Solix</a> All Rights Reserved.
+            </div>
+         </div>
+      </div>
+   </footer>
+   <!-- Footer END -->
+   <!-- Optional JavaScript -->
+   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+   <script src="../assets/js/jquery.min.js"></script>
+   <script src="../assets/js/popper.min.js"></script>
+   <script src="../assets/js/bootstrap.min.js"></script>
+   <script src="../assets/js/jquery.dataTables.min.js"></script>
+   <script src="../assets/js/dataTables.bootstrap4.min.js"></script>
+   <!-- Appear JavaScript -->
+   <script src="../assets/js/jquery.appear.js"></script>
+   <!-- Countdown JavaScript -->
+   <script src="../assets/js/countdown.min.js"></script>
+   <!-- Select2 JavaScript -->
+   <script src="../assets/js/select2.min.js"></script>
+   <!-- Counterup JavaScript -->
+   <script src="../assets/js/waypoints.min.js"></script>
+   <script src="../assets/js/jquery.counterup.min.js"></script>
+   <!-- Wow JavaScript -->
+   <script src="../assets/js/wow.min.js"></script>
+   <!-- Slick JavaScript -->
+   <script src="../assets/js/slick.min.js"></script>
+   <!-- Owl Carousel JavaScript -->
+   <script src="../assets/js/owl.carousel.min.js"></script>
+   <!-- Magnific Popup JavaScript -->
+   <script src="../assets/js/jquery.magnific-popup.min.js"></script>
+   <!-- Smooth Scrollbar JavaScript -->
+   <script src="../assets/js/smooth-scrollbar.js"></script>
+   <!-- apex Custom JavaScript -->
+   <script src="../assets/js/apexcharts.js"></script>
+   <!-- Chart Custom JavaScript -->
+   <script src="../assets/js/chart-custom.js"></script>
+   <!-- Custom JavaScript -->
+   <script src="../assets/js/custom.js"></script>
+ 
+</body>
+</html>

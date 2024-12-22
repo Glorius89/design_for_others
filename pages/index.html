@@ -1,0 +1,498 @@
+<!doctype html>
+<html lang="en">
+<head>
+   <!-- Required meta tags -->
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   <title>Design for Others (Sprint 2) - Gloria Solinas</title>
+   <!-- Favicon -->
+   <link rel="shortcut icon" href="../assets/images/favicon.ico" />
+   <!-- Bootstrap CSS -->
+   <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+   <!--datatable CSS -->
+   <link rel="stylesheet" href="../assets/css/dataTables.bootstrap4.min.css">
+   <!-- Typography CSS -->
+   <link rel="stylesheet" href="../assets/css/typography.css">
+   <!-- Style CSS -->
+   <link rel="stylesheet" href="../assets/css/style.css">
+   <!-- Responsive CSS -->
+   <link rel="stylesheet" href="../assets/css/responsive.css">
+   <!-- Google font: Space Mono -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Rye&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Varela+Round&display=swap" rel="stylesheet">
+   <!-- Font Awesome -->
+   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+   <!-- loader Start -->
+   <div id="loading">
+      <div id="loading-center">
+      </div>
+   </div>
+   <!-- loader END -->
+   <!-- Wrapper Start -->
+   <div class="wrapper">
+
+      <!-- Sidebar-->
+      <div class="iq-sidebar">
+         <div class="iq-sidebar-logo d-flex justify-content-between">
+            <a href="index.html" class="header-logo">
+               <img src="../assets/images/logo.png" class="img-fluid rounded-normal" alt="">
+               <div class="logo-title">
+                  <span class="text-primary text-uppercase">Streamit</span>
+               </div>
+            </a>
+            <div class="iq-menu-bt-sidebar">
+               <div class="iq-menu-bt align-self-center">
+                  <div class="wrapper-menu">
+                     <div class="main-circle"><i class="las la-bars"></i></div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div id="sidebar-scrollbar">
+            <nav class="iq-sidebar-menu">
+               <ul id="iq-sidebar-toggle" class="iq-menu">
+                  <li><a href="index.html" class="text-primary"><i class="ri-arrow-right-line"></i><span>Visit site</span></a></li>
+                  <li class="active active-menu"><a href="index.html" class="iq-waves-effect"><i class="las la-home iq-arrow-left"></i><span>Dashboard</span></a></li>
+                  <li><a href="user.html" class="iq-waves-effect"><i class="las la-user-friends"></i><span>Categories</span></a></li>
+                  <li>
+                     <a href="#pages" class="iq-waves-effect collapsed" data-toggle="collapse" aria-expanded="false"><i class="las la-file-alt iq-arrow-left"></i><span>Pages</span><i class="ri-arrow-right-s-line iq-arrow-right"></i></a>
+                     <ul id="pages" class="iq-submenu collapse" data-parent="#iq-sidebar-toggle">
+                        <li>
+                           <a href="#authentication" class="iq-waves-effect collapsed" data-toggle="collapse" aria-expanded="false"><i class="ri-pages-line"></i><span>Authentication</span><i class="ri-arrow-right-s-line iq-arrow-right"></i></a>
+                           <ul id="authentication" class="iq-submenu collapse" data-parent="#pages">
+                              <li><a href="sign-in.html"><i class="las la-sign-in-alt"></i>Login</a></li>
+                              <li><a href="sign-up.html"><i class="ri-login-circle-line"></i>Register</a></li>
+                              <li><a href="pages-recoverpw.html"><i class="ri-record-mail-line"></i>Recover Password</a></li>
+                              <li><a href="pages-confirm-mail.html"><i class="ri-file-code-line"></i>Confirm Mail</a></li>
+                              <li><a href="pages-lock-screen.html"><i class="ri-lock-line"></i>Lock Screen</a></li>
+                           </ul>
+                        </li>
+                        <li>
+                           <a href="#extra-pages" class="iq-waves-effect collapsed" data-toggle="collapse" aria-expanded="false"><i class="ri-pantone-line"></i><span>Extra Pages</span><i class="ri-arrow-right-s-line iq-arrow-right"></i></a>
+                           <ul id="extra-pages" class="iq-submenu collapse" data-parent="#pages">
+                              <li><a href="pages-timeline.html"><i class="ri-map-pin-time-line"></i>Timeline</a></li>
+                              <li><a href="pages-invoice.html"><i class="ri-question-answer-line"></i>Invoice</a></li>
+                              <li><a href="blank-page.html"><i class="ri-invision-line"></i>Blank Page</a></li>
+                              <li><a href="pages-error.html"><i class="ri-error-warning-line"></i>Error 404</a></li>
+                              <li><a href="pages-error-500.html"><i class="ri-error-warning-line"></i>Error 500</a></li>
+                           
+                              <li><a href="pages-maintenance.html"><i class="ri-archive-line"></i>Maintenance</a></li>
+                              <li><a href="pages-comingsoon.html"><i class="ri-mastercard-line"></i>Coming Soon</a></li>
+                              <li><a href="pages-faq.html"><i class="ri-compasses-line"></i>Faq</a></li>
+                           </ul>
+                        </li>
+                     </ul>
+                  </li>
+               </ul>
+            </nav>
+         </div>
+      </div>
+
+
+   <!-- Top Nav Bar -->
+   <div class="iq-top-navbar">
+      <div class="iq-navbar-custom">
+         <nav class="navbar navbar-expand-lg navbar-light p-0">
+            <div class="iq-menu-bt d-flex align-items-center">
+               <div class="wrapper-menu">
+                  <div class="main-circle"><i class="las la-bars"></i></div>
+               </div>
+               <div class="iq-navbar-logo d-flex justify-content-between">
+                  <a href="index.html" class="header-logo">
+                     <img src="" class="img-fluid rounded-normal" alt="">
+                     <div class="logo-title">
+                        <span class="text-primary text-uppercase">Solix</span>
+                     </div>
+                  </a>
+               </div>
+            </div>
+            <div class="iq-search-bar ml-auto">
+               <a class="search-link" href="index.html">HOME</a> 
+               <a class="search-link ml-5" href="category.html">CATEGORIES</a> <!-- Category link -->
+            </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-label="Toggle navigation">
+               <i class="ri-menu-3-line"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+               <ul class="navbar-nav ml-auto navbar-list">
+                  <li class="nav-item nav-icon ml-5">
+                     <a href="#" class="search-toggle iq-waves-effect text-gray rounded">
+                        <i class="ri-notification-2-line"></i>
+                        <span class="bg-danger dots"></span>
+                     </a>
+                     <div class="iq-sub-dropdown">
+                        <div class="iq-card shadow-none m-0">
+                           <div class="iq-card-body p-0">
+                              <div class="bg-primary p-3">
+                                 <h5 class="mb-0 text-white">All Notifications<small class="badge badge-light float-right pt-1">4</small></h5>
+                              </div>
+                              <a href="#" class="iq-sub-card">
+                                 <div class="media align-items-center">
+                                    <div class="media-body ml-3">
+                                       <h6 class="mb-0">Mark posted a new video.</h6>
+                                       <small class="float-right font-size-12">Just Now</small>
+                                       <p class="mb-0"></p>
+                                    </div>
+                                 </div>
+                              </a>
+                              <a href="#" class="iq-sub-card">
+                                 <div class="media align-items-center">
+                                    <div class="media-body ml-3">
+                                       <h6 class="mb-0">Maria posted a new video.</h6>
+                                       <small class="float-right font-size-12">Yesterday</small>
+                                       <p class="mb-0"></p>
+                                    </div>
+                                 </div>
+                              </a>
+                           </div>
+                        </div>
+                     </div>
+                  </li>
+                  <li class="nav-item nav-icon dropdown">
+                     <a href="#" class="search-toggle iq-waves-effect text-gray rounded">
+                        <i class="ri-search-line"></i>
+                     </a>
+                  </li>
+                  <li class="line-height pt-3">
+                     <a href="#" class="search-toggle iq-waves-effect d-flex align-items-center">
+                        <img src="../assets/images/profile_picture.jpg" class="img-fluid rounded-circle mr-3" alt="user">
+                     </a>
+                     <div class="iq-sub-dropdown iq-user-dropdown">
+                        <div class="iq-card shadow-none m-0">
+                           <div class="iq-card-body p-0">
+                              <div class="bg-secondary p-3">
+                                 <h5 class="mb-0 text-black line-height">Hello Gloria</h5>
+                                 <span class="text-black font-size-12">Available</span>
+                              </div>
+                              <a href="profile.html" class="iq-sub-card iq-bg-primary-hover">
+                                 <div class="media align-items-center">
+                                    <div class="media-body ml-3">
+                                       <h6 class="mb-0">My Profile</h6>
+                                       <p class="mb-0 font-size-12">View personal profile details.</p>
+                                    </div>
+                                 </div>
+                              </a>
+                              <a href="profile-edit.html" class="iq-sub-card iq-bg-primary-hover">
+                                 <div class="media align-items-center">
+                                    <div class="media-body ml-3">
+                                       <h6 class="mb-0">My List</h6>
+                                       <p class="mb-0 font-size-12">Modify your watch list.</p>
+                                    </div>
+                                 </div>
+                              </a>
+                              <div class="d-inline-block w-100 text-center p-3">
+                                 <a class="bg-primary iq-sign-btn" href="sign-in.html" role="button">Sign out<i class="ri-login-box-line ml-2"></i></a>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </li>
+               </ul>
+            </div>
+         </nav>
+      </div>
+   </div>
+   <!-- Top Nav Bar -->
+  
+  
+
+
+      <!-- Hero Image Section (Gloria) -->
+      <!-- I used a section here to make a new semantic page (Gloria) -->
+      <div class="hero-image">
+         <div class="hero-content">
+            <!-- Used <h1> for SEO purposes, as it serves as the primary heading of the homepage (Gloria) -->
+            <h1 style="font-weight: 600;">
+               <span class="part-1">Discover a new</span>
+               <span class="part-2">way to learn with <span class="gradient-text" style="font-weight: 600;">SØLIX</span></span>
+            </h1>
+            <p style="color: gray; line-height: 1.3;">
+               The world's largest streaming service for students<br>
+               & staff members with over 29,000 video resources.
+            </p>
+            <div class="hero-buttons">
+               <a href="#get-started" class="hero-button">
+                 Get started <i class="fa-solid fa-arrow-right"></i>
+               </a>
+               <a href="#learn-more" class="hero-button hero-button-outline">
+                 Learn more <i class="fa-solid fa-info-circle"></i>
+               </a>
+            </div>          
+         </div>
+      </div>
+      <!-- Hero Image Section -->
+
+
+      <!-- Page Content -->
+      <div id="content-page" class="content-page">
+         <div class="container-fluid">
+
+            <!-- Section 1 -->
+            <div class="row">
+               <div class="col-lg-12">                    
+                  <div class="iq-card">
+                     <div class="iq-card-header d-flex justify-content-between align-items-center">
+                        <div class="iq-header-title">
+                           <h3 class="card-title"> New Releases </h3>
+                        </div>
+                        <div id="top-rated-item-slick-arrow" class="slick-aerrow-block "></div>
+                     </div>
+                     <div class="iq-card-body">
+                        <ul class="list-unstyled row top-rated-item mb-0">
+                           <li class="col-sm-6 col-lg-4 col-xl-3 iq-rated-box">
+                              <div class="iq-card mb-3">
+                                 <div class="iq-card-body p-0">
+                                    <div class="iq-thumb">
+                                       <a href="javascript:void(0)">
+                                          <img src="../assets/images/lo.svg" class="img-fluid w-100 img-border-radius" alt="">
+                                       </a>
+                                    </div>
+                                    <div class="iq-feature-list">
+                                       <h6 class="font-weight-600 mb-0">Design System</h6>
+                                       <p class="mb-0 mt-2">Learn how to create a design system on Figma.</p>
+                                       <div class="d-flex align-items-center my-2 iq-ltr-direction small-text">
+                                          <p class="mb-0 mr-2"><i class="lar la-eye mr-1"></i> 134</p>
+                                          <p class="mb-0 "><i class="las la-download ml-2"></i> 30 k</p>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </li>
+                           <li class="col-sm-6 col-lg-4 col-xl-3 iq-rated-box">
+                              <div class="iq-card mb-3">
+                                 <div class="iq-card-body p-0">
+                                    <div class="iq-thumb">
+                                       <a href="javascript:void(0)">
+                                          <img src="../assets/images/okl.svg" class="img-fluid w-100 img-border-radius" alt="">
+                                       </a>
+                                    </div>
+                                    <div class="iq-feature-list">
+                                       <h6 class="font-weight-600 mb-0">Prototyping</h6>
+                                       <p class="mb-0 mt-2">Bring your ideas to life with high-fidelity prototypes.</p>
+                                       <div class="d-flex align-items-center my-2 iq-ltr-directionv small-text">
+                                          <p class="mb-0 mr-2"><i class="lar la-eye mr-1"></i> 133</p>
+                                          <p class="mb-0 "><i class="las la-download ml-2"></i> 20 k</p>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </li>
+                           <li class="col-sm-6 col-lg-4 col-xl-3 iq-rated-box">
+                              <div class="iq-card mb-3">
+                                 <div class="iq-card-body p-0">
+                                    <div class="iq-thumb">
+                                       <a href="javascript:void(0)">
+                                          <img src="../assets/images/design_thinking.svg" class="img-fluid w-100 img-border-radius" alt="">
+                                       </a>
+                                    </div>
+                                    <div class="iq-feature-list">
+                                       <h6 class="font-weight-600 mb-0">Design Thinking</h6>
+                                       <p class="mb-0 mt-2">Learn to empathise, ideate, and prototype like a pro.</p>
+                                       <div class="d-flex align-items-center my-2 iq-ltr-direction small-text">
+                                          <p class="mb-0 mr-2"><i class="lar la-eye mr-1"></i> 222</p>
+                                          <p class="mb-0 "><i class="las la-download ml-2"></i> 40 k</p>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </li>
+                           <li class="col-sm-6 col-lg-4 col-xl-3 iq-rated-box">
+                              <div class="iq-card mb-3">
+                                 <div class="iq-card-body p-0">
+                                    <div class="iq-thumb">
+                                       <a href="javascript:void(0)">
+                                          <img src="../assets/images/nnn.svg" class="img-fluid w-100 img-border-radius" alt="">
+                                       </a>
+                                    </div>
+                                    <div class="iq-feature-list">
+                                       <h6 class="font-weight-600 mb-0">UX Research</h6>
+                                       <p class="mb-0 mt-2">Learn how to conduct research to create data-driven designs.</p>
+                                       <div class="d-flex align-items-center my-2 iq-ltr-direction small-text">
+                                          <p class="mb-0 mr-2"><i class="lar la-eye mr-1"></i> 122</p>
+                                          <p class="mb-0 "><i class="las la-download ml-2"></i> 25 k</p>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </li>
+                           <li class="col-sm-6 col-lg-4 col-xl-3 iq-rated-box">
+                              <div class="iq-card mb-3">
+                                 <div class="iq-card-body p-0">
+                                    <div class="iq-thumb" style="position: relative;">
+                                       <a href="javascript:void(0)">
+                                          <img src="../assets/images/project.svg" class="img-fluid w-100 img-border-radius" alt="">
+                                       </a>
+                                       <!-- Bookmark Icon in the bottom-right corner of the SVG image -->
+                                       <div class="bookmark-icon">
+                                          <i class="las la-bookmark"></i>
+                                       </div>
+                                    </div>
+                                    <div class="iq-feature-list">
+                                       <h6 class="font-weight-600 mb-0">Parallax Animation</h6>
+                                       <p class="mb-0 mt-2">Elevate your design by adding creative animations.</p>
+                                       <div class="d-flex align-items-center my-2 iq-ltr-direction small-text">
+                                          <p class="mb-0 mr-2"><i class="lar la-eye mr-1"></i> 144</p>
+                                          <p class="mb-0"><i class="las la-download ml-2"></i> 35k</p>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </li>
+                           
+                           <li class="col-sm-6 col-lg-4 col-xl-3 iq-rated-box">
+                              <div class="iq-card mb-3">
+                                 <div class="iq-card-body p-0">
+                                    <div class="iq-thumb">
+                                       <a href="javascript:void(0)">
+                                          <img src="../assets/images/ljh.svg" class="img-fluid w-100 img-border-radius" alt="">
+                                       </a>
+                                    </div>
+                                    <div class="iq-feature-list">
+                                       <h6 class="font-weight-600 mb-0">SEO</h6>
+                                       <p class="mb-0 mt-2">Boost your website's visibility with powerful SEO techniques.</p>
+                                       <div class="d-flex align-items-center my-2 iq-ltr-direction small-text">
+                                          <p class="mb-0 mr-2"><i class="lar la-eye mr-1"></i> 134</p>
+                                          <p class="mb-0 "><i class="las la-download ml-2"></i> 30 k</p>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!-- Section 1 -->
+
+
+            <!-- Section 2 -->
+            <!-- Section 2 -->
+
+
+            <!-- Section 3 -->
+            <!-- Section 3 -->
+
+
+            <!-- Section 4 -->
+            <!-- Section 4 -->
+
+         </div>
+      </div>
+   </div>
+   <!-- Content page -->
+    
+
+ <!-- Benefits Section -->
+<div id="content-page" class="content-page">
+   <div class="container-fluid">
+      <div class="d-flex flex-column justify-content-center align-items-center text-center" style="min-height: 100vh;">
+         <!-- Headings -->
+         <div>
+            <h2 style="font-weight: 600; margin-bottom: 10px;">Unlimited tutorials, documentaries, and more</h2>
+            <h4 style="color: gray; line-height: 1.6; margin-bottom: 30px;">Watch anytime. Watch anywhere.</h4>
+         </div>
+         
+         <!-- Cards -->
+         <div class="row justify-content-center gx-3 gy-4">
+            <!-- Card 1 -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+               <div class="iq-card iq-card-block iq-card-stretch iq-card-height" style="padding: 20px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+                  <div class="iq-card-body text-center">
+                     <h6 class="mb-3 mt-2">Personalised recommendations</h6>
+                     <p style="font-size: 14px; color: #666;">Do you want to stay on top of all the new technology trends?</p>
+                  </div>
+               </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+               <div class="iq-card iq-card-block iq-card-stretch iq-card-height" style="padding: 20px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+                  <div class="iq-card-body text-center">
+                     <h6 class="mb-3 mt-2">Ads-free</h6>
+                     <p style="font-size: 14px; color: #666;">Do you want to stay on top of all the new technology trends?</p>
+                  </div>
+               </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+               <div class="iq-card iq-card-block iq-card-stretch iq-card-height" style="padding: 20px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+                  <div class="iq-card-body text-center">
+                     <h6 class="mb-3 mt-2">Exclusive content</h6>
+                     <p style="font-size: 14px; color: #666;">Do you want to stay on top of all the new technology trends?</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+         <!-- Sign-Up CTA -(Gloria) -->
+         <div class="hero-buttons mt-4">
+            <a href="#sign-up" class="hero-button mb-5">Sign up</a>
+         </div>
+         <!-- Sign-Up CTA -(Gloria) -->
+      </div>
+   </div>
+</div>
+   
+
+
+   <!-- Footer -->
+   <footer class="iq-footer">
+      <div class="container-fluid">
+         <div class="row">
+            <div class="col-lg-6">
+               <ul class="list-inline mb-0">
+                  <li class="list-inline-item"><a href="privacy-policy.html">Privacy Policy</a></li>
+                  <li class="list-inline-item"><a href="terms-of-service.html">Terms of Use</a></li>
+               </ul>
+            </div>
+            <div class="col-lg-6 text-right">
+               © 2024 Solix. Created by Gloria Solinas. All Rights Reserved.
+            </div>
+         </div>
+      </div>
+   </footer>
+   <!-- Footer -->
+
+
+
+
+   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+   <script src="../assets/js/jquery.min.js"></script>
+   <script src="../assets/js/popper.min.js"></script>
+   <script src="../assets/js/bootstrap.min.js"></script>
+   <script src="../assets/js/jquery.dataTables.min.js"></script>
+   <script src="../assets/js/dataTables.bootstrap4.min.js"></script>
+   <!-- Appear JavaScript -->
+   <script src="../assets/js/jquery.appear.js"></script>
+   <!-- Countdown JavaScript -->
+   <script src="../assets/js/countdown.min.js"></script>
+   <!-- Select2 JavaScript -->
+   <script src="../assets/js/select2.min.js"></script>
+   <!-- Counterup JavaScript -->
+   <script src="../assets/js/waypoints.min.js"></script>
+   <script src="../assets/js/jquery.counterup.min.js"></script>
+   <!-- Wow JavaScript -->
+   <script src="../assets/js/wow.min.js"></script>
+   <!-- Slick JavaScript -->
+   <script src="../assets/js/slick.min.js"></script>
+   <!-- Owl Carousel JavaScript -->
+   <script src="../assets/js/owl.carousel.min.js"></script>
+   <!-- Magnific Popup JavaScript -->
+   <script src="../assets/js/jquery.magnific-popup.min.js"></script>
+   <!-- Smooth Scrollbar JavaScript -->
+   <script src="../assets/js/smooth-scrollbar.js"></script>
+   <!-- apex Custom JavaScript -->
+   <script src="../assets/js/apexcharts.js"></script>
+   <!-- Chart Custom JavaScript -->
+   <script src="../assets/js/chart-custom.js"></script>
+   <!-- Custom JavaScript -->
+   <script src="../assets/js/custom.js"></script>
+ 
+</body>
+</html>
